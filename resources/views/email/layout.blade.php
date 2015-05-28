@@ -113,55 +113,38 @@
                   </tr>
                 </table>
 
-                <table class="row box">
+                <table class="row box"><tr><td>
+                <table>
                   <tr>
-                    <td class="wrapper">
+                    <td class="wrapper last">
 
-                      <table class="four columns">
-                        <tr>
-                          <td>
+                      <table class="twelve columns">
+                      <tr>
+                          <td class="four sub-columns">
 
                             <h3>Article</h3>
                             <p>Quesque at cursus nisi, non rutrum massa. Aenean consectetur velit faucibus mauris posuere aliquet.</p>
 
                           </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                    <td class="wrapper">
-
-                      <table class="four columns">
-                        <tr>
-                          <td>
+                          <td class="four sub-columns">
 
                             <h3>Article</h3>
-                            <p>Praesent varius eleifend rhoncus. Mauris porta met us lacus, sit amet ullam corper nulla scele.</p>
+                            <p>Quesque at cursus nisi, non rutrum massa. Aenean consectetur velit faucibus mauris posuere aliquet.</p>
 
                           </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                    <td class="wrapper last">
-
-                      <table class="four columns">
-                        <tr>
-                          <td>
+                          <td class="four sub-columns">
 
                             <h3>Article</h3>
-                            <p>Praesent feugiat mauris ante, ut elei fend ante dictum vitae. Vesti bulum pellen tesque ante nec.</p>
+                            <p>Quesque at cursus nisi, non rutrum massa. Aenean consectetur velit faucibus mauris posuere aliquet.</p>
 
                           </td>
-                          <td class="expander"></td>
                         </tr>
                       </table>
 
                     </td>
                   </tr>
-                </table>
+                  </table>
+                </td></tr></table>
 
                 <table class="row footer">
                   <tr>
