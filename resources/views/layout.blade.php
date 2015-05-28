@@ -24,7 +24,7 @@
               <tbody><tr>
 
                 <td class="webversion" style="padding: 0;vertical-align: top;padding-top: 10px;padding-bottom: 12px;font-size: 12px;line-height: 21px;text-align: right;width: 300px;color: #999;font-family: Georgia,serif">
-                  No Images? <a style="text-decoration: none;transition: all .2s;color: #999;font-weight: bold" href="http://tightenco.createsend1.com/t/i-e-jlukjiy-l-r/" target="_blank">Click here</a>
+                  No Images? <a style="text-decoration: none;transition: all .2s;color: #999;font-weight: bold" href="http://tightenco.yoursenddomain.com/t/i-e-jlukjiy-l-r/" target="_blank">Click here</a>
                 </td>
               </tr>
             </tbody></table>
@@ -33,7 +33,7 @@
       </tbody></table>
       <table class="header centered" style="border-collapse: collapse;border-spacing: 0;Margin-left: auto;Margin-right: auto;width: 602px">
         <tbody><tr><td class="border" style="padding: 0;vertical-align: top;font-size: 1px;line-height: 1px;background-color: #e9e9e9;width: 1px">&nbsp;</td></tr>
-        <tr><td class="logo" style="padding: 32px 0;vertical-align: top;mso-line-height-rule: at-least"><div class="logo-center" style="font-size: 26px;font-weight: 700;letter-spacing: -0.02em;line-height: 32px;color: #41637e;font-family: sans-serif;text-align: center" align="center" id="emb-email-header"><img style="border: 0;-ms-interpolation-mode: bicubic;display: block;Margin-left: auto;Margin-right: auto;max-width: 900px" src="https://i1.createsend1.com/ei/i/CA/BAE/047/040317/csfinal/tmp1.jpg" alt="" width="600" height="226"></div></td></tr>
+        <tr><td class="logo" style="padding: 32px 0;vertical-align: top;mso-line-height-rule: at-least"><div class="logo-center" style="font-size: 26px;font-weight: 700;letter-spacing: -0.02em;line-height: 32px;color: #41637e;font-family: sans-serif;text-align: center" align="center" id="emb-email-header"><img style="border: 0;-ms-interpolation-mode: bicubic;display: block;Margin-left: auto;Margin-right: auto;max-width: 900px" src="https://i1.yoursenddomain.com/ei/i/CA/BAE/047/040317/csfinal/tmp1.jpg" alt="" width="600" height="226"></div></td></tr>
       </tbody></table>
 
           <table class="border" style="border-collapse: collapse;border-spacing: 0;font-size: 1px;line-height: 1px;background-color: #e9e9e9;Margin-left: auto;Margin-right: auto" width="602">
@@ -204,7 +204,7 @@
                     <tbody><tr>
                       <td style="padding: 0;vertical-align: top">
                         <a style="text-decoration: none;transition: all .2s;color: #999;letter-spacing: 0.05em;font-family: Georgia,serif" href="/t/i-fb-jlukjiy-l-y/?act=wv" rel="cs_facebox" cs_likeurl="/t/i-fb-jlukjiy-l-y/?act=like" target="_blank">
-                          <img style="border: 0;-ms-interpolation-mode: bicubic;display: block" src="https://i8.createsend1.com/static/eb/master/01-mason/images/facebook-dark.png" width="26" height="21">
+                          <img style="border: 0;-ms-interpolation-mode: bicubic;display: block" src="https://i8.yoursenddomain.com/static/eb/master/01-mason/images/facebook-dark.png" width="26" height="21">
                         </a>
                       </td>
                       <td class="social-text" style="padding: 0;vertical-align: middle !important;height: 21px;font-size: 10px;font-weight: bold;text-decoration: none;text-transform: uppercase;color: #999;letter-spacing: 0.05em;font-family: Georgia,serif">
@@ -216,18 +216,18 @@
                   </tbody></table>
                 </td>
                 <td class="divider" style="padding: 0;vertical-align: top;font-family: sans-serif;font-size: 10px;line-height: 21px;text-align: center;padding-left: 14px;padding-right: 14px;color: #e9e9e9">
-                  <img style="border: 0;-ms-interpolation-mode: bicubic;display: block" src="https://i6.createsend1.com/static/eb/master/01-mason/images/diamond.png" width="5" height="21" alt="">
+                  <img style="border: 0;-ms-interpolation-mode: bicubic;display: block" src="https://i6.yoursenddomain.com/static/eb/master/01-mason/images/diamond.png" width="5" height="21" alt="">
                 </td>
                 <td class="social-link" style="padding: 0;vertical-align: top">
                   <table style="border-collapse: collapse;border-spacing: 0">
                     <tbody><tr>
                       <td style="padding: 0;vertical-align: top">
-                        <a style="text-decoration: none;transition: all .2s;color: #999;letter-spacing: 0.05em;font-family: Georgia,serif" href="http://tightenco.createsend1.com/t/i-tw-jlukjiy-l-t/" target="_blank">
-                          <img style="border: 0;-ms-interpolation-mode: bicubic;display: block" src="https://i7.createsend1.com/static/eb/master/01-mason/images/twitter-dark.png" width="26" height="21">
+                        <a style="text-decoration: none;transition: all .2s;color: #999;letter-spacing: 0.05em;font-family: Georgia,serif" href="http://tightenco.yoursenddomain.com/t/i-tw-jlukjiy-l-t/" target="_blank">
+                          <img style="border: 0;-ms-interpolation-mode: bicubic;display: block" src="https://i7.yoursenddomain.com/static/eb/master/01-mason/images/twitter-dark.png" width="26" height="21">
                         </a>
                       </td>
                       <td class="social-text" style="padding: 0;vertical-align: middle !important;height: 21px;font-size: 10px;font-weight: bold;text-decoration: none;text-transform: uppercase;color: #999;letter-spacing: 0.05em;font-family: Georgia,serif">
-                        <a style="text-decoration: none;transition: all .2s;color: #999;letter-spacing: 0.05em;font-family: Georgia,serif" href="http://tightenco.createsend1.com/t/i-tw-jlukjiy-l-i/" target="_blank">
+                        <a style="text-decoration: none;transition: all .2s;color: #999;letter-spacing: 0.05em;font-family: Georgia,serif" href="http://tightenco.yoursenddomain.com/t/i-tw-jlukjiy-l-i/" target="_blank">
                           Tweet
                         </a>
                       </td>
@@ -235,14 +235,14 @@
                   </tbody></table>
                 </td>
                 <td class="divider" style="padding: 0;vertical-align: top;font-family: sans-serif;font-size: 10px;line-height: 21px;text-align: center;padding-left: 14px;padding-right: 14px;color: #e9e9e9">
-                  <img style="border: 0;-ms-interpolation-mode: bicubic;display: block" src="https://i6.createsend1.com/static/eb/master/01-mason/images/diamond.png" width="5" height="21" alt="">
+                  <img style="border: 0;-ms-interpolation-mode: bicubic;display: block" src="https://i6.yoursenddomain.com/static/eb/master/01-mason/images/diamond.png" width="5" height="21" alt="">
                 </td>
                 <td class="social-link" style="padding: 0;vertical-align: top">
                   <table style="border-collapse: collapse;border-spacing: 0">
                     <tbody><tr>
                       <td style="padding: 0;vertical-align: top">
                         <a style="text-decoration: none;transition: all .2s;color: #999;letter-spacing: 0.05em;font-family: Georgia,serif" href="http://tightenco.forwardtomyfriend.com/i-l-2AD73FFF-jlukjiy-l-d" lang="en" target="_blank">
-                          <img style="border: 0;-ms-interpolation-mode: bicubic;display: block" src="https://i5.createsend1.com/static/eb/master/01-mason/images/forward-dark.png" width="26" height="21">
+                          <img style="border: 0;-ms-interpolation-mode: bicubic;display: block" src="https://i5.yoursenddomain.com/static/eb/master/01-mason/images/forward-dark.png" width="26" height="21">
                         </a>
                       </td>
                       <td class="social-text" style="padding: 0;vertical-align: middle !important;height: 21px;font-size: 10px;font-weight: bold;text-decoration: none;text-transform: uppercase;color: #999;letter-spacing: 0.05em;font-family: Georgia,serif">
@@ -286,7 +286,7 @@ mattstauffer.co</div>
                               <span class="hide">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                             </span>
                           </span>
-                          <span class="block"><a style="font-weight: bold;text-decoration: none;transition: all .2s;color: #999" href="http://tightenco.createsend1.com/t/i-u-jlukjiy-l-u/" target="_blank">Unsubscribe</a></span>
+                          <span class="block"><a style="font-weight: bold;text-decoration: none;transition: all .2s;color: #999" href="http://tightenco.yoursenddomain.com/t/i-u-jlukjiy-l-u/" target="_blank">Unsubscribe</a></span>
                         </div>
                       </td>
                     </tr>
