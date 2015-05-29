@@ -118,3 +118,11 @@ h1, h2, h3 {
         font-size: 12px;
         text-transform: uppercase;
     }
+
+@media only screen and (max-width: 650px) {
+    table[class="body"] .type-columns td.four.sub-columns {
+        display: block;
+        float: left;
+        width: 80% !important; /* WTF IMPORTANT ZURB */
+    }
+}
