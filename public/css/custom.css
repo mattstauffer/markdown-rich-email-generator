@@ -1,29 +1,72 @@
+
 html, body {
     background: #fbfbfb;
 }
 
 h1 {
-    color: #565656;font-weight: 700;font-size: 36px;margin-bottom: 18px;font-family: sans-serif;line-height: 42px;
+    color: #565656;
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: 18px;
+    line-height: 42px;
 }
 
 p {
-    margin-top: 0;color: #565656;font-family: Georgia,serif;font-size: 16px;line-height: 25px;margin-bottom: 25px
+    margin-top: 0;
+    color: #565656;
+    font-family: Georgia,serif;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 25px
+}
+
+h1, h2, h3 {
+    font-family: "Lato", sans-serif;
+
 }
 
 .article h2 {
-    margin-top: 0;color: #565656;font-weight: normal;font-size: 52px;margin-bottom: 22px;font-family: sans-serif;text-align: center;line-height: 58px;
+    margin-top: 0;
+    color: #565656;
+    font-weight: normal;
+    font-size: 44px;
+    margin-bottom: 22px;
+    text-align: center;
+    line-height: 58px;
 }
 
 .article p {
-    margin-top: 0;color: #565656;font-family: Georgia,serif;font-size: 21px;line-height: 32px;margin-bottom: 32px;text-align: center
+    margin-top: 0;
+    color: #565656;
+    font-family: Georgia,serif;
+    font-size: 21px;
+    line-height: 32px;
+    margin-bottom: 32px;
+    text-align: center
+}
+
+.article hr {
+    margin-bottom: 2em;
+    margin-top: 0;
+    width: 4em;
 }
 
 .four.sub-columns h3 {
-    margin-top: 0;color: #565656;font-weight: 700;font-size: 20px;margin-bottom: 12px;font-family: sans-serif;line-height: 26px
+    margin-top: 0;
+    color: #565656;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 12px;
+    line-height: 26px
 }
 
 .four.sub-columns p {
-    margin-top: 0;color: #565656;font-family: Georgia,serif;font-size: 12px;line-height: 21px;margin-bottom: 21px
+    margin-top: 0;
+    color: #565656;
+    font-family: Georgia,serif;
+    font-size: 12px;
+    line-height: 21px;
+    margin-bottom: 21px
 }
 
 .row.box {
@@ -39,3 +82,29 @@ p {
 .row.box .twelve.columns td {
     padding: 1em 2em;
 }
+
+.footer {
+    border-top: 1px solid #ddd;
+    color: red;
+    margin-top: 2em;
+    padding-top: 1em;
+}
+
+.footer .wrapper {
+    background: transparent;
+}
+
+.footer p {
+    color: #888;
+    font-size: 12px;
+    line-height: 1.8;
+    margin-bottom: 0.5em;
+}
+
+.footer a, .footer a:visited {
+    color: #7799aa !important; /* Because Zurb used !important. WTF. */
+    font-weight: bold;
+}
+    .footer a:hover {
+        text-decoration: underline !important;
+    }
