@@ -145,6 +145,20 @@
                   </table>
                 </td></tr></table>
 
+                <table class="row outbound-share">
+                  <tr>
+                    <td class="wrapper">
+                      <table class="twelve columns">
+                        <tr>
+                          <td class="center" align="center">
+                            <webversion>View on Web</webversion>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+
                 <table class="row footer">
                   <tr>
                     <td class="wrapper">
@@ -170,7 +184,7 @@
                           <td class="last right-text-pad">
                             <p>You're receiving this email because you signed up for it at mattstauffer.co</p>
 
-                            <p><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Unsubscribe</a></p>
+                            <p style="text-align: right;"><unsubscribe>Unsubscribe</unsubscribe></p>
                           </td>
                           <td class="expander"></td>
                         </tr>

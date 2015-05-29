@@ -108,3 +108,13 @@ h1, h2, h3 {
     .footer a:hover {
         text-decoration: underline !important;
     }
+
+.outbound-share {
+    margin-top: 2em;
+}
+    .outbound-share a {
+        color: #777;
+        font-family: georgia, serif;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
