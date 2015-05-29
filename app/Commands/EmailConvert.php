@@ -6,6 +6,7 @@ use Illuminate\Contracts\Bus\SelfHandling;
 use League\CommonMark\CommonMarkConverter;
 use TijsVerkoyen\CssToInlineStyles\CssToInlineStyles;
 
+// @todo: Split this out into several classes plz
 class EmailConvert extends Command implements SelfHandling
 {
     private $fileName;
@@ -85,9 +86,19 @@ class EmailConvert extends Command implements SelfHandling
             case 'columns':
                 return $this->splitColumns($content);
                 break;
+            case 'lead':
+                return $this->convertLead($content);
+                break;
             default:
                 return $this->convertMdToHtml($content);
         }
+    }
+
+    private function convertLead($content)
+    {
+        // @todo There's gotta be a better way to do this
+        $html = $this->convertMdToHtml($content);
+        return str_replace(['<p>', '</p>'], ['', ''], $content);
     }
 
     private function splitColumns($content)
