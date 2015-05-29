@@ -11,31 +11,23 @@ class EmailConvert extends Command implements SelfHandling
     private $path;
     private $break = '----break----';
 
-    /**
-     * Create a new command instance.
-     *
-     * @return void
-     */
     public function __construct($fileName)
     {
         $this->path = base_path() . '/resources/emailcontent/';
         $this->fileName = $fileName;
     }
 
-    /**
-     * Execute the command.
-     *
-     * @return void
-     */
+    // @todo: This version only allows for one of each type. We need to re-work it so that's not true. Ugh.
     public function handle()
     {
         $file = $this->getFile($this->fileName);
 
         $sections = $this->splitSections($file);
         $sections = $this->keySections($sections);
-        $sections = $this->convertSectionsToHtml($sections);
+        $sections = $this->prepAndConvertSections($sections);
+        list($lead, $sections) = $this->extractLead($sections);
 
-        $view = view('email.content', ['sections' => $sections]);
+        $view = view('email.content', ['lead' => $lead, 'sections' => $sections]);
 
         return $this->inlineStyles($view->render());
     }
@@ -58,17 +50,6 @@ class EmailConvert extends Command implements SelfHandling
         }, explode($this->break, $markdown));
     }
 
-    private function convertSectionsToHtml($sections)
-    {
-        $return = [];
-
-        foreach ($sections as $key => $content) {
-            $return[$key] = $this->convertMdToHtml($content);
-        }
-
-        return $return;
-    }
-
     private function keySections($sections)
     {
         $return = [];
@@ -80,6 +61,50 @@ class EmailConvert extends Command implements SelfHandling
         }
 
         return $return;
+    }
+
+    private function prepAndConvertSections($sections)
+    {
+        $return = [];
+
+        foreach ($sections as $key => $content) {
+            $return[$key] = $this->prepAndConvertSection($key, $content);
+        }
+
+        return $return;
+    }
+
+    private function prepAndConvertSection($type, $content)
+    {
+        // @todo: Make this not a switch--instead register processors by type key
+        switch ($type) {
+            case 'columns':
+                return $this->splitColumns($content);
+                break;
+            default:
+                return $this->convertMdToHtml($content);
+        }
+    }
+
+    private function splitColumns($content)
+    {
+        $columns = explode("--column--", trim($content));
+        array_shift($columns);
+
+        return array_map(function ($column) {
+            return $this->convertMdToHtml(trim($column));
+        }, $columns);
+    }
+
+    private function extractLead($sections)
+    {
+        $lead = $sections['lead'];
+        unset($sections['lead']);
+
+        return [
+            $lead,
+            $sections
+        ];
     }
 
     private function convertMdToHtml($markdown)

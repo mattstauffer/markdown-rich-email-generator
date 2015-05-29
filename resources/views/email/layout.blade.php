@@ -14,136 +14,14 @@
     <tr>
       <td class="center" align="center" valign="top">
         <center>
-          <table class="row header">
-            <tr>
-              <td class="center" align="center">
-                <center>
-
-                  <table class="container">
-                    <tr>
-                      <td class="wrapper last">
-
-                        <table class="twelve columns">
-                          <tr>
-
-                            <td class="six sub-columns">
-                              <img src="http://placehold.it/200x50">
-                            </td>
-                            <td class="six sub-columns last" align="right" style="text-align:right; vertical-align:middle;">
-                              <span class="template-label">HERO</span>
-                            </td>
-                            <td class="expander"></td>
-
-                          </tr>
-                        </table>
-
-                      </td>
-                    </tr>
-                  </table>
-
-                </center>
-              </td>
-            </tr>
-          </table>
-          <br>
+          @yield ('lead')
 
           <table class="container">
             <tr>
               <td>
+                @include ('email.partials.header')
 
-                <!-- content start -->
-                <table class="row">
-                  <tr>
-                    <td class="wrapper last">
-
-                      <table class="twelve columns">
-                        <tr>
-                          <td>
-                            <img width="580" height="226" src="https://s3.amazonaws.com/f.cl.ly/items/0Y3X2P2T2N0y0g3w1b2l/tmp.jpg">
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                  </tr>
-                </table>
-
-                <table class="row box box-first">
-                  <tr>
-                    <td class="wrapper last">
-
-                      <table class="twelve columns">
-                        <tr>
-                          <td>
-                            <!-- intro -->
-                            <h1>Start designing your email</h1>
-                            <p>Add new pieces of content like text, images and buttons to your email by dragging the tiles on the left where you want them to go.</p>
-                            <p>Add different layouts to your email by clicking on the green <b>Add layout</b> button below.</p>
-                            <!-- end intro -->
-
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                  </tr>
-                </table>
-
-                <table class="row box article">
-                  <tr>
-                    <td class="wrapper last">
-
-                      <table class="twelve columns">
-                        <tr>
-                          <td>
-
-                            <h2>Article</h2>
-                            <hr>
-                            <p>Nunc et mattis ante, non sodales metus. Pha sellus placerat scele risque tellus eu male suada. Pellen tesque habitant morbi tris tique sen ectus et netus et malesuada.</p>
-
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                  </tr>
-                </table>
-
-                <table class="row box"><tr><td>
-                <table>
-                  <tr>
-                    <td class="wrapper last">
-
-                      <table class="twelve columns">
-                      <tr>
-                          <td class="four sub-columns">
-
-                            <h3>Article</h3>
-                            <p>Quesque at cursus nisi, non rutrum massa. Aenean consectetur velit faucibus mauris posuere aliquet.</p>
-
-                          </td>
-                          <td class="four sub-columns">
-
-                            <h3>Article</h3>
-                            <p>Quesque at cursus nisi, non rutrum massa. Aenean consectetur velit faucibus mauris posuere aliquet.</p>
-
-                          </td>
-                          <td class="four sub-columns">
-
-                            <h3>Article</h3>
-                            <p>Quesque at cursus nisi, non rutrum massa. Aenean consectetur velit faucibus mauris posuere aliquet.</p>
-
-                          </td>
-                        </tr>
-                      </table>
-
-                    </td>
-                  </tr>
-                  </table>
-                </td></tr></table>
+                @yield ('content')
 
                 <table class="row outbound-share">
                   <tr>
@@ -194,7 +72,6 @@
                   </tr>
                 </table>
 
-                <!-- container end below -->
               </td>
             </tr>
           </table>

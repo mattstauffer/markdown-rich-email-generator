@@ -25,7 +25,7 @@ h1, h2, h3 {
 
 }
 
-.article h2 {
+.type-article h2 {
     margin-top: 0;
     color: #565656;
     font-weight: normal;
@@ -35,7 +35,7 @@ h1, h2, h3 {
     line-height: 58px;
 }
 
-.article p {
+.type-article p {
     margin-top: 0;
     color: #565656;
     font-family: Georgia,serif;
@@ -45,7 +45,7 @@ h1, h2, h3 {
     text-align: center
 }
 
-.article hr {
+.type-article hr {
     margin-bottom: 2em;
     margin-top: 0;
     width: 4em;
