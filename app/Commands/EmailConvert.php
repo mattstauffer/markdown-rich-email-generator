@@ -3,23 +3,27 @@
 use App\Commands\Command;
 use Exception;
 use Illuminate\Contracts\Bus\SelfHandling;
+use League\CommonMark\CommonMarkConverter;
 use TijsVerkoyen\CssToInlineStyles\CssToInlineStyles;
 
 class EmailConvert extends Command implements SelfHandling
 {
     private $fileName;
+    private $converter;
     private $path;
     private $break = '----break----';
 
     public function __construct($fileName)
     {
-        $this->path = base_path() . '/resources/emailcontent/';
         $this->fileName = $fileName;
+        $this->path = base_path() . '/resources/emailcontent/';
     }
 
     // @todo: This version only allows for one of each type. We need to re-work it so that's not true. Ugh.
-    public function handle()
+    public function handle(CommonMarkConverter $converter)
     {
+        $this->converter = $converter;
+
         $file = $this->getFile($this->fileName);
 
         $sections = $this->splitSections($file);
@@ -109,7 +113,7 @@ class EmailConvert extends Command implements SelfHandling
 
     private function convertMdToHtml($markdown)
     {
-        return '<i>fake html conversion here</i>' . $markdown;
+        return $this->converter->convertToHtml($markdown);
     }
 
     private function inlineStyles($html)

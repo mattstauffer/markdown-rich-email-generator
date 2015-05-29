@@ -25,7 +25,7 @@
 
                 <table class="row outbound-share">
                   <tr>
-                    <td class="wrapper">
+                    <td class="wrapper last">
                       <table class="twelve columns">
                         <tr>
                           <td class="center" align="center">
