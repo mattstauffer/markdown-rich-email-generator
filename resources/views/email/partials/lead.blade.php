@@ -11,7 +11,7 @@
               <table class="twelve columns">
                 <tr>
                   <td>
-                    <span class="template-label">{!! $lead !!}</span>
+                    <span class="template-label">{!! $lead['content'] !!}</span>
                   </td>
                 </tr>
               </table>

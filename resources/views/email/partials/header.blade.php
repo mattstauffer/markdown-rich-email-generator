@@ -4,7 +4,7 @@
       <table class="twelve columns">
         <tr>
           <td>
-            <img width="580" height="184" src="https://s3.amazonaws.com/f.cl.ly/items/0H3n233w1P2p2l0j100m/tmp.jpg">
+            <img width="580" height="97" src="https://s3.amazonaws.com/f.cl.ly/items/2j112E0T2t3R1M471N0U/header-newsletter.png">
           </td>
           <td class="expander"></td>
         </tr>

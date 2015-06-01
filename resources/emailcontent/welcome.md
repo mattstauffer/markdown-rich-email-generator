@@ -12,7 +12,7 @@ As always, you can expect content about web development (frontend, backend, PHP,
 And as always, please let me know--what else do you want to read and hear about?
 
 ----break----
---article
+--intro
 
 Much of the content I create isn't always at the same place, so that's what this newsletter is for. But I also  create content regularly at the following places:
 

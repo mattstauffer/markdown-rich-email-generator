@@ -61,8 +61,10 @@ class EmailConvert extends Command implements SelfHandling
 
         foreach ($sections as $section) {
             // trim first line, make it key, set body to old body minus first line
-            $key = trim(strtok($section, "\n"), '--');
-            $return[$key] = trim(preg_replace('/^.+\n/', '', $section));
+            $return[] = [
+                'key' => trim(strtok($section, "\n"), '--'),
+                'content' => trim(preg_replace('/^.+\n/', '', $section))
+            ];
         }
 
         return $return;
@@ -70,13 +72,10 @@ class EmailConvert extends Command implements SelfHandling
 
     private function prepAndConvertSections($sections)
     {
-        $return = [];
-
-        foreach ($sections as $key => $content) {
-            $return[$key] = $this->prepAndConvertSection($key, $content);
-        }
-
-        return $return;
+        return array_map(function ($section) {
+            $section['content'] = $this->prepAndConvertSection($section['key'], $section['content']);
+            return $section;
+        }, $sections);
     }
 
     private function prepAndConvertSection($type, $content)
@@ -92,6 +91,25 @@ class EmailConvert extends Command implements SelfHandling
             default:
                 return $this->convertMdToHtml($content);
         }
+    }
+
+    private function extractLead($sections)
+    {
+        $return = [];
+
+        foreach ($sections as $section) {
+            if ($section['key'] == 'lead') {
+                $lead = $section;
+                continue;
+            }
+
+            $return[] = $section;
+        }
+
+        return [
+            $lead,
+            $return
+        ];
     }
 
     private function convertLead($content)
@@ -111,16 +129,7 @@ class EmailConvert extends Command implements SelfHandling
         }, $columns);
     }
 
-    private function extractLead($sections)
-    {
-        $lead = $sections['lead'];
-        unset($sections['lead']);
 
-        return [
-            $lead,
-            $sections
-        ];
-    }
 
     private function convertMdToHtml($markdown)
     {

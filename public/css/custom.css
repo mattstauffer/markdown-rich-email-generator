@@ -126,3 +126,11 @@ h1, h2, h3 {
         width: 80% !important; /* WTF IMPORTANT ZURB */
     }
 }
+
+.signature {
+    margin-top: 2em;
+}
+    .signature .image img {
+        float: right;
+        margin-right: 1em;
+    }

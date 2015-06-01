@@ -23,6 +23,25 @@
 
                 @yield ('content')
 
+                <table class="row signature">
+                  <tr>
+                    <td class="wrapper last">
+                      <table class="twelve columns">
+                        <tr>
+                          <td class="three sub-columns image">
+                            <img src="https://s3.amazonaws.com/f.cl.ly/items/082y1T1h3o360u2a3m0Z/me-circle.png" style="width:100px;height:100px;">
+                          </td>
+                          <td class="nine sub-columns">
+                            <br>
+                            <p>Thanks for for reading! See you next time. :)<br>
+                            -Matt</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+
                 <table class="row outbound-share">
                   <tr>
                     <td class="wrapper last">
