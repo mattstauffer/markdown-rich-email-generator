@@ -1,10 +1,11 @@
-<table class="row">
+<br>
+<!--
+<table class="row box box-first box-no-bottom-border">
   <tr>
     <td class="wrapper last">
       <table class="twelve columns">
         <tr>
-          <td>
-            <img width="580" height="97" src="https://s3.amazonaws.com/f.cl.ly/items/2j112E0T2t3R1M471N0U/header-newsletter.png">
+          <td align="center" class="center">
           </td>
           <td class="expander"></td>
         </tr>
@@ -12,3 +13,4 @@
     </td>
   </tr>
 </table>
+-->

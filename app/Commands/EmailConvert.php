@@ -83,7 +83,10 @@ class EmailConvert extends Command implements SelfHandling
         // @todo: Make this not a switch--instead register processors by type key
         switch ($type) {
             case 'columns':
-                return $this->splitColumns($content);
+                return $this->splitBy('column', $content);
+                break;
+            case 'postlist':
+                return $this->splitBy('post', $content);
                 break;
             case 'lead':
                 return $this->convertLead($content);
@@ -119,14 +122,14 @@ class EmailConvert extends Command implements SelfHandling
         return str_replace(['<p>', '</p>'], ['', ''], $content);
     }
 
-    private function splitColumns($content)
+    private function splitBy($key, $content)
     {
-        $columns = explode("--column--", trim($content));
-        array_shift($columns);
+        $chunks = explode("--" . $key . "--", trim($content));
+        array_shift($chunks);
 
-        return array_map(function ($column) {
-            return $this->convertMdToHtml(trim($column));
-        }, $columns);
+        return array_map(function ($chunk) {
+            return $this->convertMdToHtml(trim($chunk));
+        }, $chunks);
     }
 
 

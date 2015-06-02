@@ -3,6 +3,7 @@
     <tr>
       <td>
         {!! $section !!}
+        <hr>
       </td>
       <td class="expander"></td>
     </tr>

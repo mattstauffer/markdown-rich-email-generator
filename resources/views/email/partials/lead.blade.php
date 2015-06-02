@@ -10,8 +10,11 @@
 
               <table class="twelve columns">
                 <tr>
-                  <td>
+                  <td class="eight sub-columns">
                     <span class="template-label">{!! $lead['content'] !!}</span>
+                  </td>
+                  <td class="four sub-columns" style="text-align: right;">
+                    <span class="template-label"><a href=""><webversion>View on Web</webversion></a></span>
                   </td>
                 </tr>
               </table>
@@ -24,5 +27,4 @@
     </td>
   </tr>
 </table>
-<br>
 @endif
