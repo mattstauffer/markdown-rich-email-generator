@@ -5,9 +5,11 @@ Thanks for subscribing to my newsletter!
 --intro
 
 # Thanks for subscribing to my newsletter!
-I'll be sharing my thoughts and advice on how to be an excellent developer, designer, or project manager. I write and podcast about code, but this newsletter will be more about how to be good--to others, to yourself, to your career, to your family and friends. How to do--whatever it is you do--well.
+I blog, podcast, and speak a lot, and share links here about everything I've done lately and will be doing soon.
 
-And as always, please let me know--what else do you want to read and hear about?
+But more importantly, I'll be sharing thoughts here that I don't have any space for elsewhere&mdash;about business and our real lives and about how you can do whatever it is that you do the best it can be done.
+
+And as always, please let me know&mdash;what else do you want to read and hear about?
 
 ***
 
