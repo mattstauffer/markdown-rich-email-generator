@@ -8,6 +8,6 @@ Route::get('/', function() {
 
 Route::get('test', function() {
     return Bus::dispatch(
-        new EmailConvert('welcome.md')
+        new EmailConvert('2015-06-04.md')
     );
 });

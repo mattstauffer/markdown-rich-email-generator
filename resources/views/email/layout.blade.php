@@ -33,7 +33,7 @@
                           </td>
                           <td class="nine sub-columns">
                             <br>
-                            <p>Thanks for for reading! See you next time. :)<br>
+                            <p>Thanks for reading! See you next time. :)<br>
                             -Matt</p>
                           </td>
                         </tr>
