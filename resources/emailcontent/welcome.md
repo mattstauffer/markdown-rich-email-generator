@@ -18,6 +18,8 @@ And as always, please let me know&mdash;what else do you want to read and hear a
 
 Check out the latest newsletter for a taste of the sorts of content that I'll be sending out:
 
+[October 23, 2015 - Priorities and Free Time](https://send.mattstauffer.co/w/uoPEIFh6nR763Y892rYMld3VOg)
+
 [June 15, 2015 - The Thin Line Between Confidence and Pride](https://send.mattstauffer.co/w/h73dP0BmIq8eIEEATkWf1A)
 
 [June 5, 2015 - Do the Right Thing](https://send.mattstauffer.co/w/7oqTI4fwYBzWf7CJ0CgFGA)
