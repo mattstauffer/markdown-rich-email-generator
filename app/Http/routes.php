@@ -8,7 +8,7 @@ Route::get('/', function() {
 
 Route::get('latest', function() {
     return Bus::dispatch(
-        new EmailConvert('2015-10-20.md')
+        new EmailConvert('2016-01-22.md')
     );
 });
 
