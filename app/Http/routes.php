@@ -7,8 +7,13 @@ Route::get('/', function() {
 });
 
 Route::get('latest', function() {
+    $files = File::files(base_path() . '/resources/emailcontent/');
+    $filename = $files[count($files) - 2];
+    $filename = explode('/', $filename);
+    $filename = end($filename);
+
     return Bus::dispatch(
-        new EmailConvert('2016-01-22.md')
+        new EmailConvert($filename)
     );
 });
 

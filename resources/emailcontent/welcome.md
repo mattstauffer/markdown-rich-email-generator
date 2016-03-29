@@ -16,13 +16,15 @@ And as always, please let me know&mdash;what else do you want to read and hear a
 ----break----
 --intro
 
-Check out the latest newsletter for a taste of the sorts of content that I'll be sending out:
+Check out the latest full-length newsletters for a taste of the sorts of content that I'll be sending out:
 
 [October 23, 2015 - Priorities and Free Time](https://send.mattstauffer.co/w/uoPEIFh6nR763Y892rYMld3VOg)
 
 [June 15, 2015 - The Thin Line Between Confidence and Pride](https://send.mattstauffer.co/w/h73dP0BmIq8eIEEATkWf1A)
 
 [June 5, 2015 - Do the Right Thing](https://send.mattstauffer.co/w/7oqTI4fwYBzWf7CJ0CgFGA)
+
+Note that I send out emails more frequently with a recap of content I've written elsewhere, but I'll also send out long-form content like those above every few months.
 
 ***
 
@@ -37,6 +39,10 @@ In case you don't know, I also create content regularly at the following places:
 --post--
 ### [Mattstauffer.co](http://mattstauffer.co)
 I blog at mattstauffer.co, mainly about web development and often about Laravel.
+
+--post--
+### [The Tighten Blog](http://blog.tighten.co)
+I write, often, on our company blog. But our other authors are also great.
 
 --post--
 ### [Five-Minute Geek Show](http://fiveminutegeekshow.com)
