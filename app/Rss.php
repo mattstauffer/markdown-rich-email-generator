@@ -30,6 +30,7 @@ class Rss
                 'content' => $item->get_content(),
                 'permalink' => $item->get_permalink(),
                 'date' => $item->get_date('r'),
+                'date_unix' => $item->get_date('U'),
             ];
         });
     }

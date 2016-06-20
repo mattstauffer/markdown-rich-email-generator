@@ -44,9 +44,15 @@ class EmailConvert extends Command implements SelfHandling
         return $this->inlineStyles($view->render());
     }
 
-    private function makePostListSection($frontMatter) {
+    private function makePostListSection($frontMatter)
+    {
         // @todo definitely move this external
         $content = [];
+
+        $content = array_merge(
+            app(\App\MyBlog::class)->postsBetween($frontMatter['firstBlogSlug'], $frontMatter['lastBlogSlug']),
+            $content
+        );
 
         $content = array_merge(
             app(\App\FMGS::class)->postsBetween($frontMatter['firstFMGSEpisode'], $frontMatter['lastFMGSEpisode']),
