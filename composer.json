@@ -1,5 +1,5 @@
 {
-	"name": "mattstauffer/markdownRichEmailGenerator",
+	"name": "mattstauffer/markdown-rich-email-generator",
 	"description": "Markdown Rich Email Generator",
 	"keywords": ["markdown", "email"],
 	"license": "MIT",
@@ -8,7 +8,6 @@
 		"laravel/framework": "5.1.*",
 		"tijsverkoyen/css-to-inline-styles": "^1.5",
 		"mnapoli/front-yaml": "^1.5",
-		"vinelab/rss": "^1.0",
 		"simplepie/simplepie": "^1.4"
 	},
 	"require-dev": {
