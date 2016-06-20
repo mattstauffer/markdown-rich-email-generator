@@ -37,9 +37,26 @@ class EmailConvert extends Command implements SelfHandling
         $lead = $this->getLead();
         $sections = $this->getSections();
 
+        $sections[] = $this->makePostListSection($frontMatter);
+
         $view = view('email.content', ['lead' => $lead, 'sections' => $sections]);
 
         return $this->inlineStyles($view->render());
+    }
+
+    private function makePostListSection($frontMatter) {
+        // @todo definitely move this external
+        $content = [];
+
+        $content = array_merge(
+            app(\App\FMGS::class)->postsBetween($frontMatter['firstFMGSEpisode'], $frontMatter['lastFMGSEpisode']),
+            $content
+        );
+
+        return [
+            'key' => 'postlist',
+            'content' => $content
+        ];
     }
 
     private function getFile($fileName)

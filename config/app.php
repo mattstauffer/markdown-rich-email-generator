@@ -145,7 +145,7 @@ return [
         'App\Providers\ConfigServiceProvider',
         'App\Providers\EventServiceProvider',
         'App\Providers\RouteServiceProvider',
-
+        Vinelab\Rss\RssServiceProvider::class,
     ],
 
     /*
