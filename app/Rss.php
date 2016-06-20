@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Exception;
 use SimplePie;
 
 class Rss
@@ -10,12 +11,12 @@ class Rss
     {
         $feed = new SimplePie;
         $feed->set_feed_url($url);
-        $feed->enable_cache(false);
+        $feed->set_cache_location(storage_path('app/'));
         $feed->init();
         $feed->handle_content_type();
 
         if ($feed->error()) {
-            throw new \Exception($feed->error());
+            throw new Exception($feed->error());
         }
 
         $info = [];
