@@ -13,6 +13,7 @@ class EmailConvert extends Command implements SelfHandling
     private $converter;
     private $path;
     private $break = '----break----';
+    private $cssPath;
 
     private $content;
     private $splitFile;
@@ -23,6 +24,7 @@ class EmailConvert extends Command implements SelfHandling
     {
         $this->fileName = $fileName;
         $this->path = base_path() . '/resources/emailcontent/';
+        $this->cssPath = public_path('css/app.css');
     }
 
     public function handle(Parser $converter)
@@ -38,7 +40,7 @@ class EmailConvert extends Command implements SelfHandling
 
         $sections[] = $this->makePostListSection($frontMatter);
 
-        $view = view('email.content', ['lead' => $lead, 'sections' => $sections]);
+        $view = view('email.content', ['lead' => $lead, 'sections' => $sections, 'skipCss' => true]);
 
         return $this->inlineStyles($view->render());
     }
@@ -208,8 +210,8 @@ class EmailConvert extends Command implements SelfHandling
 
     private function inlineStyles($html)
     {
-        $cssToInlineStyles = new CssToInlineStyles($html);
-        $cssToInlineStyles->setUseInlineStylesBlock(true);
-        return $cssToInlineStyles->convert();
+        // @todo: This literally is doing nothing. WTF?
+        $css = file_get_contents($this->cssPath);
+        return (new CssToInlineStyles)->convert($html, $css);
     }
 }

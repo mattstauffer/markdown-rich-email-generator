@@ -1,1 +1,165 @@
+@import url('http://fonts.googleapis.com/css?family=Lato:400,700');
+@import 'zurb.less';
 
+/**
+ * Link color: #4a90e2;
+ */
+
+html, body {
+    background: #fff;
+}
+
+h1 {
+    color: #565656;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 0.5em;
+    line-height: 42px;
+}
+
+p {
+    color: #333;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+h1, h2, h3 {
+    font-family: "Lato", sans-serif;
+}
+
+.header {
+    background: transparent;
+}
+    .header, .header p, .header span {
+        color: #999;
+        font-weight: normal;
+    }
+
+    .header a {
+        color: #999 !important;
+        font-weight: normal;
+    }
+
+.type-article {
+    margin-top: 1em;
+}
+
+.type-article h2 {
+    color: #333;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 58px;
+    margin-bottom: 16px;
+    margin-top: -1em;
+    text-align: center;
+}
+
+.type-article p {
+    /*color: #565656;*/
+    /*font-family: Georgia, serif;*/
+    /*font-size: 18px;*/
+    /*line-height: 32px;*/
+    /*margin-bottom: 32px;*/
+    /*margin-top: 0;*/
+}
+
+.type-article h2 + hr {
+    margin-top: -1em;
+}
+
+.type-article blockquote p {
+    font-size: 1.5em;
+    margin-bottom: 1.4em;
+    margin-top: 1.3em;
+}
+
+.type-article hr {
+    background: #aaa;
+    margin-bottom: 1em;
+    margin-top: 0;
+    width: 4em;
+}
+
+.four.sub-columns h3 {
+    color: #565656;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 12px;
+    margin-top: 0;
+    line-height: 26px;
+}
+
+.four.sub-columns p {
+    color: #565656;
+    font-family: Georgia, serif;
+    font-size: 12px;
+    line-height: 21px;
+    margin-bottom: 21px;
+    margin-top: 0;
+}
+
+.footer {
+    border-top: 1px solid #eee;
+    color: red;
+    margin-top: 2em;
+    padding-top: 1em;
+}
+
+.footer .wrapper {
+    background: transparent;
+}
+
+.footer p {
+    color: #888;
+    font-size: 12px;
+    line-height: 1.8;
+    margin-bottom: 0.5em;
+}
+
+.footer a, .footer a:visited {
+    color: #4a90e2 !important; /* Because Zurb used !important. WTF. */
+    font-weight: bold;
+}
+    .footer a:hover {
+        text-decoration: underline !important;
+    }
+
+.outbound-share {
+    margin-top: 2em;
+}
+    .outbound-share a {
+        color: #777;
+        font-family: georgia, serif;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+@media only screen and (max-width: 650px) {
+    table[class="body"] .type-columns td.four.sub-columns {
+        display: block;
+        float: left;
+        width: 80% !important; /* WTF IMPORTANT ZURB */
+    }
+}
+
+.signature {
+}
+    .signature .image img {
+        float: right;
+        margin-right: 1em;
+    }
+
+.type-postlist {
+    margin-top: -2em;
+}
+    .type-postlist h3 {
+        color: #333;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 3px;
+        margin-top: 0;
+    }

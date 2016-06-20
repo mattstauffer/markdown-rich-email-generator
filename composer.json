@@ -6,7 +6,7 @@
 	"type": "project",
 	"require": {
 		"laravel/framework": "5.1.*",
-		"tijsverkoyen/css-to-inline-styles": "^1.5",
+		"tijsverkoyen/css-to-inline-styles": "^2.0",
 		"mnapoli/front-yaml": "^1.5",
 		"simplepie/simplepie": "^1.4"
 	},
