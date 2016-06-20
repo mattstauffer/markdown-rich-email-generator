@@ -25,7 +25,6 @@ class EmailConvert extends Command implements SelfHandling
         $this->path = base_path() . '/resources/emailcontent/';
     }
 
-    // @todo: This version only allows for one of each type. We need to re-work it so that's not true. Ugh.
     public function handle(Parser $converter)
     {
         $this->converter = $converter;
