@@ -14,6 +14,10 @@ class Rss
         $feed->init();
         $feed->handle_content_type();
 
+        if ($feed->error()) {
+            throw new \Exception($feed->error());
+        }
+
         $info = [];
 
         return (object) [
@@ -27,6 +31,7 @@ class Rss
         return collect($feed->get_items())->map(function ($item) {
             return [
                 'title' => $item->get_title(),
+                'author' => $item->get_author(),
                 'content' => $item->get_content(),
                 'permalink' => $item->get_permalink(),
                 'date' => $item->get_date('r'),

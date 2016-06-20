@@ -9,6 +9,6 @@ class FMGS extends Reader
 
     protected function parsePostId($post)
     {
-        return (int) collect(explode('/', $post['permalink']))->last();
+        return (int) parent::parsePostId($post); 
     }
 }

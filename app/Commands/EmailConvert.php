@@ -50,12 +50,22 @@ class EmailConvert extends Command implements SelfHandling
         $content = [];
 
         $content = array_merge(
-            app(\App\MyBlog::class)->postsBetween($frontMatter['firstBlogSlug'], $frontMatter['lastBlogSlug']),
+            app(\App\TMGS::class)->postsBetween($frontMatter['firstTMGSEpisode'], $frontMatter['lastTMGSEpisode']),
             $content
         );
 
         $content = array_merge(
             app(\App\FMGS::class)->postsBetween($frontMatter['firstFMGSEpisode'], $frontMatter['lastFMGSEpisode']),
+            $content
+        );
+
+        $content = array_merge(
+            app(\App\TightenBlog::class)->postsBetween($frontMatter['firstTightenBlogSlug'], $frontMatter['lastTightenBlogSlug']),
+            $content
+        );
+
+        $content = array_merge(
+            app(\App\MyBlog::class)->postsBetween($frontMatter['firstBlogSlug'], $frontMatter['lastBlogSlug']),
             $content
         );
 
