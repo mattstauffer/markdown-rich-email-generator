@@ -2,6 +2,7 @@
 
 class TestCase extends Illuminate\Foundation\Testing\TestCase
 {
+    protected $baseUri = 'http://localhost';
 
     /**
      * Creates the application.

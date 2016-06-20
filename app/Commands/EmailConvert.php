@@ -3,7 +3,7 @@
 use App\Commands\Command;
 use Exception;
 use Illuminate\Contracts\Bus\SelfHandling;
-use League\CommonMark\CommonMarkConverter;
+use Mni\FrontYAML\Parser;
 use TijsVerkoyen\CssToInlineStyles\CssToInlineStyles;
 
 // @todo: Split this out into several classes plz
@@ -14,6 +14,11 @@ class EmailConvert extends Command implements SelfHandling
     private $path;
     private $break = '----break----';
 
+    private $content;
+    private $splitFile;
+    private $lead;
+    private $sections;
+
     public function __construct($fileName)
     {
         $this->fileName = $fileName;
@@ -21,16 +26,16 @@ class EmailConvert extends Command implements SelfHandling
     }
 
     // @todo: This version only allows for one of each type. We need to re-work it so that's not true. Ugh.
-    public function handle(CommonMarkConverter $converter)
+    public function handle(Parser $converter)
     {
         $this->converter = $converter;
 
-        $file = $this->getFile($this->fileName);
+        $document = $this->converter->parse($this->getFile($this->fileName), false);
+        $frontMatter = $document->getYaml();
+        $this->content = $document->getContent();
 
-        $sections = $this->splitSections($file);
-        $sections = $this->keySections($sections);
-        $sections = $this->prepAndConvertSections($sections);
-        list($lead, $sections) = $this->extractLead($sections);
+        $lead = $this->getLead();
+        $sections = $this->getSections();
 
         $view = view('email.content', ['lead' => $lead, 'sections' => $sections]);
 
@@ -46,6 +51,37 @@ class EmailConvert extends Command implements SelfHandling
         }
 
         return file_get_contents($filePath);
+    }
+
+    private function getSections()
+    {
+        $this->parseSections();
+
+        return $this->sections;
+    }
+
+    private function getLead()
+    {
+        $this->parseSections();
+
+        return $this->lead;
+    }
+
+    private function parseSections()
+    {
+        if (! $this->splitFile) {
+            $this->splitFile = $this->prepAndConvertSections(
+                $this->keySections(
+                    $this->splitSections(
+                        $this->content
+                    )
+                )
+            );
+
+            list($lead, $sections) = $this->extractLead($this->splitFile);
+            $this->lead = $lead;
+            $this->sections = $sections;
+        }
     }
 
     private function splitSections($markdown)
@@ -132,11 +168,10 @@ class EmailConvert extends Command implements SelfHandling
         }, $chunks);
     }
 
-
-
     private function convertMdToHtml($markdown)
     {
-        return $this->converter->convertToHtml($markdown);
+        $document = $this->converter->parse($markdown);
+        return $document->getContent($markdown);
     }
 
     private function inlineStyles($html)
