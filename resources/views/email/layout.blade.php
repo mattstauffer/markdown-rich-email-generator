@@ -3,6 +3,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width"/>
+  <style type="text/css">
+    @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+  </style>
 <?php /*
   <style type="text/css">
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
@@ -11,7 +14,8 @@
   </style>
        */ ?>
     @if (! isset($skipCss) || ! $skipCss)
-        <link rel="stylesheet" href="/css/app.css">
+        <link rel="stylesheet" href="/css/zurb.css">
+        <link rel="stylesheet" href="/css/custom.css">
     @endif
 </head>
 <body>
@@ -47,7 +51,7 @@
                   </tr>
                 </table>
 
-<!--
+                {{--
                 <table class="row outbound-share">
                   <tr>
                     <td class="wrapper last">
@@ -61,7 +65,7 @@
                     </td>
                   </tr>
                 </table>
-                -->
+                --}}
 
                 <table class="row footer">
                   <tr>

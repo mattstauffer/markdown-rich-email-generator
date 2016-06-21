@@ -1,5 +1,5 @@
 <br>
-<!--
+{{--
 <table class="row box box-first box-no-bottom-border">
   <tr>
     <td class="wrapper last">
@@ -13,4 +13,4 @@
     </td>
   </tr>
 </table>
--->
+--}}

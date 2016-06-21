@@ -13,7 +13,6 @@ class EmailConvert extends Command implements SelfHandling
     private $converter;
     private $path;
     private $break = '----break----';
-    private $cssPath;
 
     private $content;
     private $splitFile;
@@ -210,8 +209,9 @@ class EmailConvert extends Command implements SelfHandling
 
     private function inlineStyles($html)
     {
-        // @todo: This literally is doing nothing. WTF?
-        $css = file_get_contents($this->cssPath);
+        $css = file_get_contents(public_path('css/zurb.css'));
+        $css .= file_get_contents(public_path('css/custom.css'));
+
         return (new CssToInlineStyles)->convert($html, $css);
     }
 }
