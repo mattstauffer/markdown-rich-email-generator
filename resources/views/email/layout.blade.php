@@ -41,7 +41,6 @@
                             <img src="https://s3.amazonaws.com/f.cl.ly/items/082y1T1h3o360u2a3m0Z/me-circle.png" style="width:100px;height:100px;">
                           </td>
                           <td class="nine sub-columns">
-                            <br>
                             <p>Thanks for reading! See you next time. :)<br>
                             -Matt</p>
                           </td>

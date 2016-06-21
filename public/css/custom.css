@@ -160,3 +160,7 @@ h1, h2, h3 {
         margin-bottom: 3px;
         margin-top: 0;
     }
+
+    .postlist-title {
+        margin-top: 1em !important;
+    }

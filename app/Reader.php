@@ -26,7 +26,7 @@ abstract class Reader
         }
 
         return array_merge(
-            ['<h3 style="margin-top: 1em;">' . strtoupper($this->feedTitle) . '</h3>'],
+            ['<h3 class="postlist-title">' . strtoupper($this->feedTitle) . '</h3>'],
             $posts->all()
         );
     }
