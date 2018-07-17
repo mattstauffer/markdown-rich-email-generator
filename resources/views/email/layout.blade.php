@@ -74,7 +74,7 @@
                         <tr>
                           <td class="left-text-pad">
 
-                            <p>Email: <a href="mailto:matt@mattstauffer.co">matt@mattstauffer.co</a></p>
+                            <p>Email: <a href="mailto:matt@mattstauffer.com">matt@mattstauffer.com</a></p>
 
                             <p>Twitter: <a href="http://twitter.com/stauffermatt">@stauffermatt</a></p>
 
@@ -89,9 +89,7 @@
                       <table class="six columns">
                         <tr>
                           <td class="last right-text-pad">
-                            <p>You're receiving this email because you signed up for it at <a href="http://mattstauffer.co/">mattstauffer.co</a></p>
-
-                            <p style="text-align: right;">Powered by <a href="https://sendy.co/?ref=1DZsV">Sendy</a> | <webversion>View on Web</webversion> | <unsubscribe>Unsubscribe</unsubscribe></p>
+                            <p>You're receiving this email because you signed up for it at <a href="http://mattstauffer.com/">mattstauffer.com</a>. You can always <unsubscribe>Unsubscribe</unsubscribe></p>.
                           </td>
                           <td class="expander"></td>
                         </tr>
